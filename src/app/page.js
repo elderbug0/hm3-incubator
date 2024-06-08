@@ -1,7 +1,9 @@
+// src/app/page.js
 'use client';
 
 import React, { useEffect, useState } from 'react';
 import { fetchPosts } from '../lib/api';
+import withAuth from '../lib/withAuth';
 
 const HomePage = () => {
   const [posts, setPosts] = useState([]);
@@ -37,4 +39,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default withAuth(HomePage);
