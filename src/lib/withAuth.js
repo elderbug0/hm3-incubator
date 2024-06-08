@@ -1,4 +1,3 @@
-// src/lib/withAuth.js
 'use client';
 
 import React, { useEffect } from 'react';
